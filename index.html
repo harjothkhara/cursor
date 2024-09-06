@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Photo Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>AI Photo Editor</h1>
+            <button id="authButton">Sign Up / Login</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Transform Your Photos with AI</h2>
+            <p>Edit, enhance, and create stunning images in seconds</p>
+            <button>Try It Now</button>
+        </section>
+
+        <section id="features">
+            <div class="image-gallery">
+                <img src="couple.jpg" alt="Happy couple using AI Photo Editor">
+                <img src="family.jpg" alt="Family enjoying AI-edited photos">
+                <img src="friends.jpg" alt="Friends having fun with AI Photo Editor">
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p>"This AI Photo Editor is amazing! It's so easy to use and the results are incredible."</p>
+                    <p class="author">- Sarah J.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"I've never been able to edit photos this well before. It's like having a professional photographer in my pocket!"</p>
+                    <p class="author">- Mike T.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"The AI features are mind-blowing. I can create stunning images in seconds!"</p>
+                    <p class="author">- Emily R.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="press">
+            <h2>As Featured In</h2>
+            <div class="logo-container">
+                <img src="techcrunch-logo.png" alt="TechCrunch Logo">
+                <img src="fastcompany-logo.png" alt="Fast Company Logo">
+                <img src="wired-logo.png" alt="Wired Logo">
+                <img src="forbes-logo.png" alt="Forbes Logo">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 AI Photo Editor. All rights reserved.</p>
+    </footer>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up / Login</h2>
+            <form id="authForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
