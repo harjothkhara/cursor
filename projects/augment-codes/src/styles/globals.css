@@ -11,20 +11,10 @@ body {
 }
 
 .hero {
-  position: relative;
   overflow: hidden;
 }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  background: linear-gradient(to bottom, transparent, white);
-  z-index: 1;
-}
+/* Removed the ::after pseudo-element that was creating the gradient overlay */
 
 .hero > div:first-child {
   will-change: transform;
