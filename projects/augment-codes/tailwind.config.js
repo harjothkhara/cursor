@@ -5,7 +5,11 @@ module.exports = {
     "./src/styles/**/*.css",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'offside': ['Offside', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
