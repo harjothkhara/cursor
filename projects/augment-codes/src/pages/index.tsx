@@ -36,11 +36,20 @@ const Home: React.FC = () => {
         <title>Augment Code</title>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Offside&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
       </Head>
 
-      <header className="fixed w-full bg-white z-50 py-3">
+      <header className="fixed w-full bg-white z-50 py-4">
         <nav className="container mx-auto px-6">
-          {/* ... existing nav content ... */}
+          <div className="flex justify-end items-center">
+            <a href="#" className="font-inter text-nowrap py-4 hover:text-gray-600 md:py-2 text-gray-600 mx-4 text-sm">Blog</a>
+            <a href="#" className="font-inter text-nowrap py-4 hover:text-gray-600 md:py-2 text-gray-600 mx-4 text-sm">Team</a>
+            <a href="#" className="font-inter text-nowrap py-4 hover:text-gray-600 md:py-2 text-gray-600 mx-4 text-sm">Careers</a>
+            <a href="#" className="font-inter bg-blue-500 hover:bg-blue-600 text-white font-normal py-2 px-6 rounded-full ml-4">
+              <span className="hidden md:inline">Try Augment Code</span>
+              <span className="md:hidden">Try Now</span>
+            </a>
+          </div>
         </nav>
       </header>
 
@@ -48,7 +57,7 @@ const Home: React.FC = () => {
         <div className="flex flex-col items-center justify-center min-h-screen pt-14">
           <div className="container mx-auto px-6">
             <div className="flex items-center justify-center mb-12">
-              <div className="mr-6">
+              <div className="mr-6 pb-12">
                 <BlinkingRobot />
               </div>
               <div className="text-center flex flex-col items-end">
