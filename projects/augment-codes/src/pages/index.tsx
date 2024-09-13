@@ -6,6 +6,7 @@ import robotBlinkLogo from '../images/robot-blink.png';
 import codebaseImage from '../images/codebase.png';
 import devTeamImage from '../images/dev-team.png';
 import companyImage from '../images/company.png';
+import { testimonials } from '../testimonials';
 
 const BlinkingRobot: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -27,6 +28,63 @@ const BlinkingRobot: React.FC = () => {
   );
 };
 
+const TestimonialCarousel: React.FC = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextTestimonial = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+  };
+
+  return (
+    <div className="bg-blue-500 text-white py-16 px-4 sm:px-6 lg:px-8 relative rounded-lg">
+      <div className="max-w-3xl mx-auto text-center">
+        <svg className="w-12 h-12 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+        </svg>
+        <p className="text-2xl font-medium mb-8">{testimonials[currentIndex].text}</p>
+        <div>
+          <p className="font-semibold">{testimonials[currentIndex].author}</p>
+          <p className="text-blue-200">{testimonials[currentIndex].date}</p>
+        </div>
+      </div>
+      <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
+        <button 
+          onClick={prevTestimonial}
+          className="p-2 rounded-full bg-white/20 text-white hover:bg-white/30 transition-colors"
+          aria-label="Previous testimonial"
+        >
+          ←
+        </button>
+      </div>
+      <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
+        <button 
+          onClick={nextTestimonial}
+          className="p-2 rounded-full bg-white/20 text-white hover:bg-white/30 transition-colors"
+          aria-label="Next testimonial"
+        >
+          →
+        </button>
+      </div>
+      <div className="flex justify-center mt-8">
+        {testimonials.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`h-3 w-3 rounded-full mx-1 ${
+              index === currentIndex ? 'bg-white' : 'bg-white/50'
+            }`}
+            aria-label={`Go to testimonial ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const Home: React.FC = () => {
   const offsideStyle = { fontFamily: "'Offside', sans-serif" };
 
@@ -36,7 +94,6 @@ const Home: React.FC = () => {
         <title>Augment Code</title>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Offside&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
       </Head>
 
       <header className="fixed w-full bg-white z-50 py-4">
@@ -105,6 +162,13 @@ const Home: React.FC = () => {
           </div>
         </div>
       </main>
+
+      <section className="bg-gray-100 py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-8">What Our Users Are Saying</h2>
+          <TestimonialCarousel />
+        </div>
+      </section>
 
       <footer className="bg-gray-100 py-6 relative z-20">
         {/* ... existing footer content ... */}
