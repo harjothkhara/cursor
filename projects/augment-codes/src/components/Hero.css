@@ -1,0 +1,39 @@
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Increased to 80% of the viewport height */
+  padding-top: 12rem; /* Already set to 12rem */
+  padding-bottom: 4rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.robotContainer {
+  margin-right: 1.5rem;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mainTitle {
+  font-size: 78px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1;
+}
+
+.subTitle {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 3rem;
+  margin-top: -0.2em;
+  text-transform: lowercase;
+}

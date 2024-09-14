@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'offside': ['Offside', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
       },
     },
   },

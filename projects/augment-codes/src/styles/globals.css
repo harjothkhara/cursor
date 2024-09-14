@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Your existing global styles */
 html {
   scroll-behavior: smooth;
 }
@@ -14,9 +15,22 @@ body {
   overflow: hidden;
 }
 
-/* Removed the ::after pseudo-element that was creating the gradient overlay */
-
 .hero > div:first-child {
   will-change: transform;
   transform: translateZ(0);
+}
+
+/* Include custom classes directly in globals.css */
+@layer components {
+  .title-large {
+    @apply text-[78px] font-bold text-gray-900 leading-none;
+  }
+
+  .title-medium {
+    @apply text-[48px] font-bold text-gray-900 leading-[3rem] lowercase;
+  }
+
+  .feature-title {
+    @apply text-2xl font-semibold mb-3 text-gray-500;
+  }
 }

@@ -1,0 +1,9 @@
+.robotContainer {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.robotImage {
+  transition: opacity 300ms;
+}

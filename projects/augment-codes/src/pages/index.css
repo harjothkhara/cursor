@@ -1,0 +1,30 @@
+.container {
+  min-height: 100vh;
+  background-color: white;
+  font-family: 'Offside', sans-serif;
+}
+
+.main {
+  padding-bottom: 8rem;
+}
+
+.testimonialSection {
+  background-color: #F3F4F6;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.testimonialContainer {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.testimonialTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
