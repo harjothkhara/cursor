@@ -30,3 +30,7 @@ yarn-error.log*
 # Optional: misc
 *.log
 .cache
+
+# Next.js build output
+.next
+out
