@@ -1,6 +1,6 @@
 # Augment Codes
 
-This is the landing page conceptfor Augment Code, an AI code generation developer tool for enterprise engineering teams.
+This is the landing page concept for Augment Code, an AI code generation developer tool for enterprise engineering teams.
 
 Augment's understanding of your codebase and dependencies removes the toil in your day, so you can experience the joy of coding.
 
