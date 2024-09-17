@@ -4,6 +4,10 @@ This is the landing page concept for Augment Code, an AI code generation develop
 
 Augment's understanding of your codebase and dependencies removes the toil in your day, so you can experience the joy of coding.
 
+## Live Demo
+
+Check out the landing page: [Augment Code](https://cursor-azure.vercel.app/)
+
 ## Features
 
 - Landing page with interactive hero section featuring a blinking robot animation on hover
@@ -42,6 +46,25 @@ These instructions will get you a copy of the project up and running on your loc
 - [Next.js](https://nextjs.org/) - The React framework used
 - [Tailwind CSS](https://tailwindcss.com/) - For styling
 - [TypeScript](https://www.typescriptlang.org/) - For type-safe code
+
+## Feature Requests
+
+Here are some features that are being considered for future updates:
+
+- Add a demonstration animation video of the product. e.g user using augment code editor to generate unit tests for a given code snippet
+- Add a scrolling logo banner component for all current partners
+
+### How to Request a Feature
+
+We welcome feature requests from the community! If you have an idea for a new feature or improvement:
+
+1. Go to the [Issues](https://github.com/yourusername/augment-codes/issues) tab of this repository.
+2. Click on "New Issue".
+3. Choose "Feature request" if available, or use a blank issue.
+4. Provide a clear title and detailed description of the feature you'd like to see.
+5. Submit the issue.
+
+Your request will be reviewed and considered for future development. Thank you for helping make Augment Code better!
 
 ## License
 
