@@ -46,6 +46,8 @@ These instructions will get you a copy of the project up and running on your loc
 - [Next.js](https://nextjs.org/) - The React framework used
 - [Tailwind CSS](https://tailwindcss.com/) - For styling
 - [TypeScript](https://www.typescriptlang.org/) - For type-safe code
+- [Cursor AI](https://www.cursor.so/) - AI-powered code editor
+- [Claude 3.5 Sonnet](https://www.anthropic.com) - Advanced AI model for natural language processing
 
 ## Feature Requests
 
