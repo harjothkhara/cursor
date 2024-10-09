@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import Features from '../components/Features';
 import TestimonialCarousel from '../components/TestimonialCarousel';
 import Footer from '../components/Footer';
+import PartnersScrollWithStyles from '../components/PartnersScroll';
 
 const Home: React.FC = () => {
   return (
@@ -26,6 +27,12 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-8">What Our Users Are Saying</h2>
           <TestimonialCarousel />
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <PartnersScrollWithStyles />
         </div>
       </section>
 
