@@ -1,8 +1,19 @@
-# Augment Codes
+# Augment Code
 
-This is the landing page concept for Augment Code, an AI code generation developer tool for enterprise engineering teams.
+Augment Code is a web application that helps developers write better code faster using AI-powered suggestions and code completion.
 
-Augment's understanding of your codebase and dependencies removes the toil in your day, so you can experience the joy of coding.
+## Built With
+
+- [Next.js](https://nextjs.org/) - The React framework for production
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale
+- [Cursor AI](https://www.cursor.so/) - AI-powered code editor
+- [Claude 3.5 Sonnet](https://www.anthropic.com) - Advanced AI model for natural language processing
+
+## Hosting
+
+This website is hosted on [Vercel](https://vercel.com/), a cloud platform for static sites and Serverless Functions.
 
 ## Live Demo
 
@@ -84,5 +95,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ### Landing Page
 ![Landing Page Top Section](src/images/augment-landingpage1.png)
 
+![Landing Page Top Section](src/images/augment-landingpage3.png)
+
 ![Landing Page Bottom Section](src/images/augment-landingpage2.png)
+
+![Landing Page Bottom Section](src/images/augment-landingpage4.png)
 
