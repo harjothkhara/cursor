@@ -23,6 +23,8 @@ Check out the landing page: [Augment Code](https://cursor-azure.vercel.app/)
 
 - Landing page with interactive hero section featuring a blinking robot animation on hover
 - User testimonials carousel
+- Augment product video demo by Guy
+- Partners section with scrolling animation
 
 ## Getting Started
 
